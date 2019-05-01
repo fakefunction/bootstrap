@@ -7,7 +7,7 @@ namespace CalculatorLib.SandBox
     {
         private static void Main()
         {
-            int r = Calculator.Add(3, 4);
+            int r = Lib.CalculatorLib.Add(3, 4);
             Console.WriteLine("Result is {0}", r);
             Console.ReadLine();
         }

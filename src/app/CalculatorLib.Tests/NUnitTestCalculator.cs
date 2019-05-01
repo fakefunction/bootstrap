@@ -11,8 +11,8 @@ namespace CalculatorLib.Tests
         public static void TestAddWithNUnit()
         {
             Trace.WriteLine("TestAddWithNUnit");
-            Assert.AreEqual(4, Calculator.Add(3, 1));
-            Assert.AreEqual(0, Calculator.Add(0, 0));
+            Assert.AreEqual(4, Lib.CalculatorLib.Add(3, 1));
+            Assert.AreEqual(0, Lib.CalculatorLib.Add(0, 0));
         }
     }
 }
