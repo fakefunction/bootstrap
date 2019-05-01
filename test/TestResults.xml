@@ -1,0 +1,29 @@
+<test-results name="Merged results" total="1" errors="0" failures="0" not-run="0" inconclusive="0" skipped="0" ignored="0" invalid="0" date="2019-04-30" time="13:59:08">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.9035" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\PLAY GROUND\fake" machine-name="DESKTOP-29J8O9R" user="Cubic Movie" user-domain="DESKTOP-29J8O9R" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Test Project" name="" executed="True" result="Success" time="0.046" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="D:\PLAY GROUND\fake\test\NUnit.CalculatorLib.Tests.dll" executed="True" result="Success" success="True" time="0.046" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="NUnit" executed="True" result="Success" success="True" time="0.036" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.036" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="CalculatorLib" executed="True" result="Success" success="True" time="0.036" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="NUnitTestCalculator" executed="True" result="Success" success="True" time="0.034" asserts="0">
+                        <results>
+                          <test-case name="NUnit.CalculatorLib.Tests.NUnitTestCalculator.TestAddWithNUnit" executed="True" result="Success" success="True" time="0.034" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
