@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib.Lib", "Calcul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib.SandBox", "CalculatorLib.SandBox\CalculatorLib.SandBox.csproj", "{DCAA68D4-934D-48B3-9EE4-405DE2D480BA}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "CalculatorLibApp", "CalculatorLib.Function\CalculatorLibApp.fsproj", "{F809566E-4CC8-4854-B341-16A2A3E86B4E}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "CalculatorLib.Function", "CalculatorLib.Function\CalculatorLib.Function.fsproj", "{F809566E-4CC8-4854-B341-16A2A3E86B4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
