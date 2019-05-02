@@ -5,6 +5,8 @@ docs/
 docsBuild/
 report/
 test/
+.vs
+.fake
 !src/test/
 !Samples/ContinuousDeploymentWebsite/src/test/
 obj/

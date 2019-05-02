@@ -1,10 +1,10 @@
-namespace CalculatorLibApp
+namespace CalculatorLib.Function
 
 open Microsoft.AspNetCore.Mvc
 open Microsoft.AspNetCore.Http
 open Microsoft.Azure.WebJobs.Host
 
-module CalculatorLibHttp =
+module FirstFunction =
   let run(req: HttpRequest, log: TraceWriter) =
     log.Info("F# HTTP trigger function processed a request.")
     log.Info(System.Configuration.ConfigurationManager.AppSettings.Count |> string)

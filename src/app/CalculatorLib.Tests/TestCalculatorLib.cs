@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace CalculatorLib.Tests
 {
     [TestFixture]
-    public class NUnitTestCalculator
+    public class TestCalculatorLib
     {
         [Test]
         public static void TestAddWithNUnit()
