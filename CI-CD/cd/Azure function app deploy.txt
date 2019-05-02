@@ -1,0 +1,1 @@
+$(System.DefaultWorkingDirectory)/CalculatorLib-CI/CalculatorLib.Function/*.zip
