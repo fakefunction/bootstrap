@@ -1,6 +1,6 @@
 ﻿namespace CalculatorLib.Lib
 {
-    public class CalculatorLib
+    public class SomeLib
     {
         /// <summary>
         /// Adds the specified x.
