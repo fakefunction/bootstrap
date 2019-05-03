@@ -7,13 +7,17 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FirstFunction\FirstFunction.fs" />
+    <Compile Include="FunctionA\Fun.fs" />
+    <Content Include="FunctionA\function.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="FunctionB\Fun.fs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="FirstFunction\function.json">
+    <Content Include="FunctionB\function.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="local.settings.json">

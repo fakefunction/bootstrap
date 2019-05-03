@@ -14,6 +14,8 @@ if errorlevel 1 (
 
 chdir /D CalculatorLib.Function
 
+rmdir /s /q bin\Debug\net462\publish 2>nul
+
 dotnet restore
 dotnet build
 dotnet publish

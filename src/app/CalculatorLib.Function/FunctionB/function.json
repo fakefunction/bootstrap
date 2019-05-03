@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "methods": [ "get" ],
+      "authLevel": "anonymous",
+      "name": "req"
+    }
+  ],
+  "scriptFile": "../bin/CalculatorLib.Function.dll",
+  "entryPoint": "CalculatorLib.Function.SomeFunctionB.run"
+}

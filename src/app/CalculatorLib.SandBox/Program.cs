@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using CalculatorLib.Lib;
 
 namespace CalculatorLib.SandBox
@@ -7,7 +7,7 @@ namespace CalculatorLib.SandBox
     {
         private static void Main()
         {
-            int r = Lib.SomeLib.Add(3, 4);
+            int r = SomeLib.Add(3, 4);
             Console.WriteLine("Result is {0}", r);
             Console.ReadLine();
         }

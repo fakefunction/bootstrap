@@ -1,0 +1,1 @@
+src/app/CalculatorLib.Function/bin/Debug/net462/publish
