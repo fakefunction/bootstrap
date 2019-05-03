@@ -14,13 +14,13 @@ if errorlevel 1 (
 
 chdir /D CalculatorLib.Function
 
-rmdir /s /q bin\Debug\net462\publish 2>nul
+rmdir /s /q bin\Debug\net472\publish 2>nul
 
 dotnet restore
 dotnet build
 dotnet publish
 
-chdir /D bin\Debug\net462\publish
+chdir /D bin\Debug\net472\publish
 
 func host start
 

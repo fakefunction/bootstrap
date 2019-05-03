@@ -3,6 +3,8 @@ cls
 
 set curr_dir=%cd%
 
+rmdir /s /q build 2>nul
+
 chdir /D src\app
 
 .paket\paket.exe restore

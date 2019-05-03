@@ -1,2 +1,2 @@
-Root folder : $(Build.SourcesDirectory)/src/app/CalculatorLib.Function/bin/Debug/net462/publish
+Root folder : $(Build.SourcesDirectory)/src/app/CalculatorLib.Function/bin/Debug/net472/publish
 Archive file : $(Build.StagingDirectory)/$(Build.BuildId).zip

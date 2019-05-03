@@ -1,7 +1,7 @@
 {
   "azureFunctions.projectRuntime": "~1",
   "azureFunctions.projectLanguage": "F#",
-  "azureFunctions.deploySubpath": "bin/Release/net462/publish",
+  "azureFunctions.deploySubpath": "bin/Release/net472/publish",
   "azureFunctions.preDeployTask": "publish",
   "debug.internalConsoleOptions": "neverOpen"
 }
