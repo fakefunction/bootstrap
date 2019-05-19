@@ -26,13 +26,14 @@ let testPathPattern = buildDir + "/*.Tests.dll"
 // version info
 let version = "0.2"  // or retrieve from CI server
 
+
 // Targets
 Target "Clean" (fun _ ->
     CleanDirs [buildDir;  deployDir; deployNugetDir]
 )
 
 Target "BuildApp" (fun _ ->
-    !! "src/app/**/*.csproj"
+    !! "src/app/*/*.csproj"
         |> MSBuildRelease buildDir "Build"
         |> Log "AppBuild-Output: "
 )
@@ -61,6 +62,12 @@ Target "TestParallel" (fun _ ->
                 OutputFile = buildDir + "TestResults.xml" })
 )
 
+//nug.fsx interface
+let depends = System.IO.File.ReadAllLines("dep.txt") 
+                    |> Seq.map(fun m -> m.Split(','))
+                    |> Seq.map(fun m -> (m.[0],m.[1]))
+                    |> List.ofSeq
+
 Target "BuildNuGet" (fun _ ->   
     CopyTo deployNugetDir [buildDir]
     NuGet (fun p ->
@@ -73,9 +80,7 @@ Target "BuildNuGet" (fun _ ->
         WorkingDir = buildDir
         OutputPath = deployNugetDir
         AccessKey = myAccessKey        
-        Dependencies = [
-            "Netonsoft.Json", "0.1"
-        ]
+        Dependencies = depends
         DependenciesByFramework = [
         ]
         Publish = false 

@@ -3,16 +3,15 @@ cls
 
 set curr_dir=%cd%
 
-rmdir /s /q build 2>nul
-
 chdir /D src\app
 
-.paket\paket.exe restore
+.paket\paket.exe install --redirects --clean-redirects
+
 if errorlevel 1 (
   exit /b %errorlevel%
 )
-
-".paket/paket.exe" install 
+ 
+.paket\paket.exe install --redirects --clean-redirects
 
 dotnet build
 
@@ -24,11 +23,12 @@ dotnet publish
 
 chdir /D %curr_dir%
 
-.paket\paket.exe restore
+.paket\paket.exe install --redirects --clean-redirects
+
 if errorlevel 1 (
   exit /b %errorlevel%
 )
 
-".paket/paket.exe" install
+.paket\paket.exe install --redirects --clean-redirects
 
 build.bat

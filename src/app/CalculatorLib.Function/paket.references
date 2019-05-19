@@ -1,4 +1,6 @@
-Microsoft.AspNetCore.Mvc.Core
 Microsoft.NET.Sdk.Functions
 System.Configuration
-FSharp.Core
+FSharp.Data
+StackExchange.Redis
+NLog
+Microsoft.AspNet.WebApi

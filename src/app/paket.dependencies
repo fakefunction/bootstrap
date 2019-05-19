@@ -1,7 +1,37 @@
 source https://api.nuget.org/v3/index.json
 
-nuget FSharp.Core
-nuget Microsoft.AspNetCore.Mvc.Core 2.0.0
-nuget Microsoft.NET.Sdk.Functions 1.0.6
-nuget NUnit 2.6.2 prerelease restriction: >= net35
-nuget System.Configuration 2.0.5
+nuget Microsoft.NET.Sdk.Functions 1.0.28
+nuget NUnit
+nuget System.Configuration 
+nuget FSharp.Data
+nuget StackExchange.Redis
+nuget Microsoft.AspNet.SignalR.SelfHost
+nuget Microsoft.AspNet.SignalR.SystemWeb
+nuget Microsoft.Owin.StaticFiles
+nuget Microsoft.AspNet.WebApi
+nuget Akka.Logger.NLog
+nuget Autofac.SignalR
+nuget Autofac.Owin
+
+nuget Microsoft.Owin.Cors 
+nuget Microsoft.Owin.StaticFiles 
+
+nuget Akka.Cluster 
+nuget RestSharp
+nuget Microsoft.AspNet.WebApi.OwinSelfHost
+
+nuget Topshelf.NLog
+
+nuget Microsoft.AspNet.SignalR.SelfHost
+nuget Microsoft.AspNet.WebApi
+nuget SlickProxy
+
+nuget Microsoft.Data.Services.Client
+
+nuget Microsoft.Azure.KeyVault.Core
+nuget Microsoft.Data.Edm
+nuget Microsoft.Data.OData
+nuget Microsoft.Data.Services.Client
+nuget Newtonsoft.Json
+nuget System.Spatial
+nuget WindowsAzure.Storage

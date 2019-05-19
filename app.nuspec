@@ -38,7 +38,7 @@
 			app
 		</copyright>
 		<tags>
-			app lib
+		   CalculatorLib app lib
 		</tags>
 		@dependencies@
 		@references@

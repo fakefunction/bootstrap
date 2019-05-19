@@ -1,2 +1,0 @@
-Path to publish : $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-Artifact name : CalculatorLib.Function

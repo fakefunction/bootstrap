@@ -2,22 +2,36 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Caching" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FunctionA\Fun.fs" />
-    <Content Include="FunctionA\function.json">
+    <Compile Include="Models.fs" />
+    <Compile Include="SimpleLogger.fs" />
+    <Compile Include="MemCachinglib.fs" />
+    <Compile Include="PromiseLib.fs" />
+    <None Include="App.config" />
+    <Compile Include="JsonModule.fs" />
+    <Compile Include="RedisModule.fs" />
+    <Compile Include="Common.fs" />
+    <Compile Include="DataSourceFunction\Fun.fs" />
+    <Content Include="DataSourceFunction\function.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Compile Include="FunctionB\Fun.fs" />
+    <Compile Include="ApiFunction\Fun.fs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PingFunction\function.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="PingFunction\Fun.fs" />
     <Content Include="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="FunctionB\function.json">
+    <Content Include="ApiFunction\function.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="local.settings.json">
@@ -26,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalculatorLib.Lib\CalculatorLib.Lib.csproj" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

@@ -40,6 +40,6 @@ dc into src/app
 dotnet restore then build
 cd into .function
 dotnet restore then build then publish
-cd into bin\debug\netstandard2.0\publish OR \bin\Debug\net472\publish
+cd into bin\debug\netstandard2.0\publish OR \bin\Debug\net462\publish
 func host start
 or just execute run command from Visual Studio Code.

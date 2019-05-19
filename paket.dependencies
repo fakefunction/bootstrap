@@ -1,6 +1,6 @@
 source http://nuget.org/api/v2
 
-nuget FAKE
+nuget FAKE 5.8.4
 nuget Fake.DotNet.NuGet
 
 http https://dist.nuget.org/win-x86-commandline/latest/nuget.exe NuGet/nuget.exe

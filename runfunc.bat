@@ -10,11 +10,11 @@ if errorlevel 1 (
   exit /b %errorlevel%
 )
 
-".paket/paket.exe" install 
+.paket\paket.exe restore
 
 chdir /D CalculatorLib.Function
 
-rmdir /s /q bin\Debug\net472\publish 2>nul
+rmdir /s /q bin\Debug\net462\publish 2>nul
 
 dotnet restore
 dotnet build
