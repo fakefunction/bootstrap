@@ -1,3 +1,7 @@
+
+git push -f
+
+
 first Download the latest paket.bootstrapper.exe 'https://github.com/fsprojects/Paket/releases/latest' into that directory.
 => run it to update paket exe
 => run ".paket/paket.exe" install 
