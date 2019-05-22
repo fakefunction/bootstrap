@@ -11,39 +11,33 @@ The NUnit.CalculatorLib.Tests test project references the NUnit version 2.6.2 li
 so we need that version too.
 
 
-In the root of the project you will find a build.bat file:
-If you run this batch file from the command line then the 
-latest FAKE version will be downloaded from nuget.org and 
-your first FAKE script (build.fsx) will be executed.
+=============================================================
+
+TO ADD NUGET FROM PRIVATE FEED DO
+
+".paket//paket.exe" install --redirects --clean-redirects
 
 
-to run  function
+".paket//paket.exe"  convert-from-nuget -v -f
+ 
+".paket//paket.exe" clear-cache -v
 
-1. dotnet new --install "Microsoft.Azure.WebJobs.ProjectTemplates"
-
-since https://github.com/MicrosoftDocs/azure-docs/issues/12901
-
-cd tp path
-dotnet restore
-dotnet build
-dotnet publish
-cd bin\debug\netstandard2.0\publish
-func host start
-or just execute run command from Visual Studio Code.
+".paket//paket.exe" simplify
 
 
-TO BUILD THINGS
 
-===================
-run ".paket/paket.exe" install at root
-cd into src/app and run run ".paket/paket.exe" 
+step 1 download the CredentialProvider
 
-cd back into root
-run build.bat
-dc into src/app
-dotnet restore then build
-cd into .function
-dotnet restore then build then publish
-cd into bin\debug\netstandard2.0\publish OR \bin\Debug\net462\publish
-func host start
-or just execute run command from Visual Studio Code.
+step 2: get username and passwordt
+
+>CredentialProvider.VSS.exe -U https://pkgs.dev.azure.com/CalculatorCompanyDev/_packaging/CalculatorLib/nuget/v3/index.json
+Getting new credentials for source:https://pkgs.dev.azure.com/CalculatorCompanyDev/_packaging/CalculatorLib/nuget/v3/index.json, scope:vso.packaging_write vso.drop_write
+{"__VssPasswordWarning":"WARNING: Treat the authentication token in the passwordt.","Username":"VssSessionToken","Password":"eyJ0eXAiOiJtWhwA"}
+
+
+setp 3 run
+".paket/paket.exe" config add-credentials https://pkgs.dev.azure.com/CalculatorCompanyDev/_packaging/CalculatorLib/nuget/v3/index.json  --verify
+
+step 4 :
+
+".paket//paket.exe" install --redirects --clean-redirects
